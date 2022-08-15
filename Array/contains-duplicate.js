@@ -8,8 +8,8 @@ Contains Duplicate
  * @return {boolean}
  */
 const containsDuplicate = function (nums) {
-  const tempArray = new Set(nums);
-  return nums.length !== tempArray.size;
+  const uniqueNumbers = new Set(nums);
+  return nums.length > uniqueNumbers.size;
 };
 
-console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+console.log(containsDuplicate([1, 2, 3, 4, 5, 1]));
